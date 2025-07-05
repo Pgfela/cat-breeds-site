@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cat Breeds Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      color: #333;
+    }
+    header {
+      background-color: #ff6f61;
+      padding: 1rem;
+      text-align: center;
+      color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      margin: 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1rem;
+      text-align: center;
+    }
+    .card-body h2 {
+      margin: 0.5rem 0;
+      color: #ff6f61;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffe0dc;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🐱 Fun & Colorful Cat Breeds Gallery 🐱</h1>
+  </header>
+
+  <div class="gallery">
+    <div class="card">
+      <img src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg" alt="Abyssinian" />
+      <div class="card-body">
+        <h2>Abyssinian</h2>
+        <p>Playful, curious, and elegant with a short ticked coat.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn2.thecatapi.com/images/ozEvzdVM-.jpg" alt="Maine Coon" />
+      <div class="card-body">
+        <h2>Maine Coon</h2>
+        <p>Gentle giants known for their size, fluff, and friendly nature.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn2.thecatapi.com/images/s4wQfYoEk.jpg" alt="Sphynx" />
+      <div class="card-body">
+        <h2>Sphynx</h2>
+        <p>Hairless and affectionate, loves attention and cuddles!</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn2.thecatapi.com/images/6tb3GgJ.jpg" alt="Persian" />
+      <div class="card-body">
+        <h2>Persian</h2>
+        <p>Long-haired beauty with a calm and gentle demeanor.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn2.thecatapi.com/images/JFPROfGtQ.jpg" alt="Bengal" />
+      <div class="card-body">
+        <h2>Bengal</h2>
+        <p>Energetic with leopard-like spots and wild appearance.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Created with ❤️ by a Cat Lover | Images from <a href="https://thecatapi.com" target="_blank">TheCatAPI</a>
+  </footer>
+</body>
+</html>
